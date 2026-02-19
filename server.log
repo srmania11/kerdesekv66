@@ -1,0 +1,151 @@
+[Thu Feb 19 13:32:04 2026] PHP 8.3.6 Development Server (http://localhost:8081) started
+[Thu Feb 19 13:32:32 2026] [::1]:55220 Accepted
+[Thu Feb 19 13:32:32 2026] [::1]:55220 [200]: GET /profile_edit.php
+[Thu Feb 19 13:32:32 2026] [::1]:55220 Closing
+[Thu Feb 19 13:34:05 2026] [::1]:47344 Accepted
+[Thu Feb 19 13:34:05 2026] [::1]:47344 [200]: GET /profile_edit.php
+[Thu Feb 19 13:34:05 2026] [::1]:47344 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58634 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58634 [200]: GET /profile_edit.php
+[Thu Feb 19 13:35:08 2026] [::1]:58634 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58640 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58640 [200]: GET /assets/default_avatars/avatar_0_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58640 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58654 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58654 [200]: GET /assets/default_avatars/avatar_10_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58654 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58656 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58656 [200]: GET /assets/default_avatars/avatar_11_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58656 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58672 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58672 [200]: GET /assets/default_avatars/avatar_12_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58672 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58680 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58680 [200]: GET /assets/default_avatars/avatar_13_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58680 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58696 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58696 [200]: GET /assets/default_avatars/avatar_14_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58696 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58702 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58702 [200]: GET /assets/default_avatars/avatar_15_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58702 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58714 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58714 [200]: GET /assets/default_avatars/avatar_16_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58714 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58726 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58726 [200]: GET /assets/default_avatars/avatar_17_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58726 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58740 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58740 [200]: GET /assets/default_avatars/avatar_18_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58740 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58752 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58752 [200]: GET /assets/default_avatars/avatar_19_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58752 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58758 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58758 [200]: GET /assets/default_avatars/avatar_1_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58758 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58772 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58772 [200]: GET /assets/default_avatars/avatar_2_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58772 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58778 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58778 [200]: GET /assets/default_avatars/avatar_3_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58778 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58792 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58792 [200]: GET /assets/default_avatars/avatar_4_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58792 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58802 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58802 [200]: GET /assets/default_avatars/avatar_5_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58802 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58816 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58816 [200]: GET /assets/default_avatars/avatar_6_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58816 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58828 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58828 [200]: GET /assets/default_avatars/avatar_7_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58828 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58832 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58832 [200]: GET /assets/default_avatars/avatar_8_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58832 Closing
+[Thu Feb 19 13:35:08 2026] [::1]:58848 Accepted
+[Thu Feb 19 13:35:08 2026] [::1]:58848 [200]: GET /assets/default_avatars/avatar_9_150x150.webp
+[Thu Feb 19 13:35:08 2026] [::1]:58848 Closing
+[Thu Feb 19 13:35:10 2026] [::1]:58864 Accepted
+[Thu Feb 19 13:35:10 2026] [::1]:58864 [200]: POST /ajax_profile_upload.php
+[Thu Feb 19 13:35:10 2026] [::1]:58864 Closing
+[Thu Feb 19 13:35:10 2026] [::1]:58874 Accepted
+[Thu Feb 19 13:35:10 2026] [::1]:58874 [200]: GET /uploads/avatars/0/999.webp?v=1771508110
+[Thu Feb 19 13:35:10 2026] [::1]:58874 Closing
+[Thu Feb 19 13:35:12 2026] [::1]:50480 Accepted
+[Thu Feb 19 13:35:12 2026] [::1]:50480 [200]: POST /ajax_profile_update.php
+[Thu Feb 19 13:35:12 2026] [::1]:50480 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57720 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57720 [200]: GET /profile_edit.php
+[Thu Feb 19 13:37:01 2026] [::1]:57720 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57726 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57726 [200]: GET /assets/default_avatars/avatar_0_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57726 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57730 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57730 [200]: GET /assets/default_avatars/avatar_10_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57730 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57732 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57732 [200]: GET /assets/default_avatars/avatar_11_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57732 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57734 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57734 [200]: GET /assets/default_avatars/avatar_12_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57734 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57746 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57746 [200]: GET /assets/default_avatars/avatar_13_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57746 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57752 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57752 [200]: GET /assets/default_avatars/avatar_14_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57752 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57768 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57768 [200]: GET /assets/default_avatars/avatar_15_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57768 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57782 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57782 [200]: GET /assets/default_avatars/avatar_16_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57782 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57794 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57794 [200]: GET /assets/default_avatars/avatar_17_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57794 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57806 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57806 [200]: GET /assets/default_avatars/avatar_18_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57806 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57818 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57818 [200]: GET /assets/default_avatars/avatar_19_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57818 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57834 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57834 [200]: GET /assets/default_avatars/avatar_1_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57834 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57842 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57842 [200]: GET /assets/default_avatars/avatar_2_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57842 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57852 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57852 [200]: GET /assets/default_avatars/avatar_3_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57852 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57856 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57856 [200]: GET /assets/default_avatars/avatar_4_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57856 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57872 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57872 [200]: GET /assets/default_avatars/avatar_5_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57872 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57882 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57882 [200]: GET /assets/default_avatars/avatar_6_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57882 Closing
+[Thu Feb 19 13:37:01 2026] [::1]:57886 Accepted
+[Thu Feb 19 13:37:01 2026] [::1]:57886 [200]: GET /assets/default_avatars/avatar_7_150x150.webp
+[Thu Feb 19 13:37:01 2026] [::1]:57886 Closing
+[Thu Feb 19 13:37:02 2026] [::1]:57900 Accepted
+[Thu Feb 19 13:37:02 2026] [::1]:57900 [200]: GET /assets/default_avatars/avatar_8_150x150.webp
+[Thu Feb 19 13:37:02 2026] [::1]:57900 Closing
+[Thu Feb 19 13:37:02 2026] [::1]:57906 Accepted
+[Thu Feb 19 13:37:02 2026] [::1]:57906 [200]: GET /assets/default_avatars/avatar_9_150x150.webp
+[Thu Feb 19 13:37:02 2026] [::1]:57906 Closing
+[Thu Feb 19 13:37:03 2026] [::1]:57908 Accepted
+[Thu Feb 19 13:37:03 2026] [::1]:57908 [200]: POST /ajax_profile_upload.php
+[Thu Feb 19 13:37:03 2026] [::1]:57908 Closing
+[Thu Feb 19 13:37:03 2026] [::1]:57924 Accepted
+[Thu Feb 19 13:37:03 2026] [::1]:57924 [200]: GET /uploads/avatars/0/999.webp?v=1771508223
+[Thu Feb 19 13:37:03 2026] [::1]:57924 Closing
+[Thu Feb 19 13:37:05 2026] [::1]:57928 Accepted
+[Thu Feb 19 13:37:05 2026] [::1]:57928 [200]: POST /ajax_profile_update.php
+[Thu Feb 19 13:37:05 2026] [::1]:57928 Closing
