@@ -85,7 +85,7 @@ if ($isOwner) {
 
 // 5. Handle Tabs & Fetch Data
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'overview';
-$validTabs = ['overview', 'questions', 'answers', 'badges'];
+$validTabs = ['overview', 'questions', 'answers', 'badges', 'storage_info'];
 if (!in_array($tab, $validTabs)) $tab = 'overview';
 
 // Common Data (Badges are always shown in header)
@@ -567,7 +567,8 @@ if (file_exists($headerPath)) {
                 foreach($aTiers as $t) { if($aCount >= $t) $aPrev = $t; else break; }
                 $aProgress = ($aNext > $aPrev) ? (($aCount - $aPrev) / ($aNext - $aPrev)) * 100 : 100;
             ?>
-            <div class="mt-6 bg-slate-900/80 backdrop-blur-md border border-slate-700 rounded-none overflow-hidden relative group">
+            <div id="storage-widget-container" class="mt-6 bg-slate-900/80 backdrop-blur-md border border-slate-700 rounded-none overflow-hidden relative group">
+                <div id="storage-widget-content">
                 <!-- Background Effects -->
                 <div class="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-blue-500/20 transition-all duration-700"></div>
                 <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-purple-500/20 transition-all duration-700"></div>
@@ -636,12 +637,13 @@ if (file_exists($headerPath)) {
 
                     <!-- Footer Link -->
                     <div class="mt-4 pt-3 border-t border-slate-700/50 text-center">
-                        <a href="#" class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors flex items-center justify-center gap-1 group/link">
+                        <a href="#" onclick="openStorageInfo(event)" class="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors flex items-center justify-center gap-1 group/link">
                             <i class="fas fa-info-circle"></i> Mit kell tudni a tárhelyről?
                             <i class="fas fa-chevron-right text-[8px] opacity-0 group-hover/link:opacity-100 transform group-hover/link:translate-x-1 transition-all"></i>
                         </a>
                     </div>
                 </div>
+                </div> <!-- End storage-widget-content -->
             </div>
             <?php endif; ?>
             <!-- STORAGE WIDGET END -->
@@ -652,6 +654,7 @@ if (file_exists($headerPath)) {
         <div class="lg:col-span-2">
 
             <div id="profile-bookmarks-view" class="hidden"></div>
+            <div id="profile-storage-view" class="hidden"></div>
 
             <div id="profile-main-content" class="space-y-6">
 
@@ -960,6 +963,8 @@ if (file_exists($headerPath)) {
                         <?php endif; ?>
                     </div>
                 </div>
+            <?php elseif ($tab === 'storage_info'): ?>
+                <?php include 'storage_info_content.php'; ?>
             <?php endif; ?>
 
             </div> <!-- End profile-main-content -->
@@ -1827,7 +1832,87 @@ if (file_exists($headerPath)) {
     }
 
     // Mapping for sidebar calls
+
+    // --- STORAGE INFO POPUP LOGIC ---
+    function openStorageInfo(e) {
+        e.preventDefault();
+
+        // Get content from the hidden template
+        const template = document.getElementById('storage-info-template');
+        if (!template) return;
+
+        const contentHtml = template.innerHTML;
+        const isMobile = window.innerWidth < 1024;
+
+        if (isMobile) {
+            // MOBILE: Hide Storage Widget Content, Inject Info
+            const widgetContent = document.getElementById('storage-widget-content');
+            const widgetContainer = document.getElementById('storage-widget-container');
+
+            if (widgetContent && widgetContainer) {
+                // Ensure we don't duplicate if already open
+                const existing = document.getElementById('mobile-storage-info-active');
+                if (existing) return;
+
+                widgetContent.classList.add('hidden');
+
+                const wrapper = document.createElement('div');
+                wrapper.id = 'mobile-storage-info-active';
+                wrapper.innerHTML = contentHtml;
+                widgetContainer.appendChild(wrapper);
+            }
+        } else {
+            // DESKTOP: Hide Main Content, Inject Info into #profile-storage-view
+            const mainContent = document.getElementById('profile-main-content');
+            const storageView = document.getElementById('profile-storage-view');
+            const bookmarksView = document.getElementById('profile-bookmarks-view');
+
+            if (mainContent && storageView) {
+                mainContent.classList.add('hidden');
+                if (bookmarksView) bookmarksView.classList.add('hidden'); // Hide bookmarks if open
+
+                storageView.innerHTML = contentHtml;
+                storageView.classList.remove('hidden');
+            }
+        }
+    }
+
+    function closeStorageInfo() {
+        const isMobile = window.innerWidth < 1024;
+
+        if (isMobile) {
+            // MOBILE: Remove Injected, Show Widget
+            const activeInfo = document.getElementById('mobile-storage-info-active');
+            const widgetContent = document.getElementById('storage-widget-content');
+
+            if (activeInfo) activeInfo.remove();
+            if (widgetContent) widgetContent.classList.remove('hidden');
+
+        } else {
+            // DESKTOP: Hide Storage View, Show Main Content
+            const mainContent = document.getElementById('profile-main-content');
+            const storageView = document.getElementById('profile-storage-view');
+
+            if (storageView) {
+                storageView.classList.add('hidden');
+                storageView.innerHTML = ''; // Clean up
+            }
+
+            // If mainContent exists, show it. If not (e.g. we are on ?tab=storage_info page), redirect.
+            if (mainContent) {
+                mainContent.classList.remove('hidden');
+            } else {
+                // Fallback if we are on the PHP rendered tab and want to "close" it
+                window.location.href = '?tab=overview';
+            }
+        }
+    }
 </script>
+<!-- Hidden Template for Storage Info -->
+<div id="storage-info-template" class="hidden">
+    <?php include 'storage_info_content.php'; ?>
+</div>
+
 <style>
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
